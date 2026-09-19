@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Escolha o idioma para acessar o portfólio de Milene Santos.">
+    <title>Milene Santos</title>
+    <link rel="stylesheet" href="./styles/languageStyle.css">
+</head>
+<body>
+    <main>
+        <section id="languageContainer" aria-labelledby="textoLanguage">
+            <h1 id="textoLanguage">Hi! Nice to meet you!</h1>
+            <p id="languagePrompt">What language do you speak?</p>
+
+            <fieldset id="buttonLanguageContainer" aria-describedby="languagePrompt">
+                <legend class="visuallyHidden">Choose your language</legend>
+                <button class="buttonLanguage" type="button" data-lang="pt">Português</button>
+                <button class="buttonLanguage" type="button" data-lang="en">English</button>
+            </fieldset>
+            <p id="languageStatus" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <script src="./script.js" defer></script>
+</body>
+</html>
