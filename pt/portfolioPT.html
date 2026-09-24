@@ -20,7 +20,7 @@
                 </div>
                     <li class="logo"><h1>Milene Santos</h1></li>
                 <div class="nav-container">
-                    <li><a href="#formation">Projetos</a></li>
+                    <li><a href="#projects">Projetos</a></li>
                     <li><a href="#contact">Contato <span aria-hidden="true">↗</span></a></li>
                 </div>
             </ul>
@@ -79,11 +79,104 @@
             </div>
         </section>
 
+        <section id="work" aria-labelledby="work-heading">
+            <div class="section-heading-row">
+                <h2 id="work-heading" class="section-heading">Experiência Profissional<span class="accent-dot">.</span></h2>
+            </div>
+           <div class="formation-container">
+                <div class="formation_item">
+                    <p class="formation-type">Estágio em soluções de Gestão de Ativos e Modernização</p>
+                    <h3>Estágio em Vendas Técnicas</h3>
+                    <p>IBM (Set/2024 - Ago/2026)</p>
+                    <div class="work-description">
+                        <p>Atuação em projetos de transformação digital, com foco em soluções de gestão de ativos e modernização de processos. Colaboração com equipes multidisciplinares para identificar oportunidades de melhoria e implementar soluções inovadoras.</p>
+                    <div class="skills-container">
+                        <span class="skill-tag">Modenização</span>
+                        <span class="skill-tag">Gestão de Ativos</span>
+                        <span class="skill-tag">ESG</span>
+                        <span class="skill-tag">POCs/Demos</span>
+                        <span class="skill-tag">Interação com clientes B2B</span>
+                        <span class="skill-tag">Cloud</span>
+                        <span class="skill-tag">Openshift</span>
+                    </div>
+                    </div>
+                </div>
+                <img src="../assets/ibm.jpeg" alt="Imagem da IBM" class="formation_image">
+            </div>
+        </section>
+
+            <section id="projects" aria-labelledby="projects-heading">
+                <div class="section-heading-row">
+                <h2 id="projects-heading" class="section-heading">Projetos<span class="accent-dot">.</span></h2>
+                </div>
+
+                <div class="project-carousel" data-project-carousel>
+                <div class="semester-tabs" role="tablist" aria-label="Projetos por semestre">
+                    <button class="semester-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="project-panel" data-semester="0">1º semestre</button>
+                    <button class="semester-tab" type="button" role="tab" aria-selected="false" aria-controls="project-panel" data-semester="1">2º semestre</button>
+                    <button class="semester-tab" type="button" role="tab" aria-selected="false" aria-controls="project-panel" data-semester="2">3º semestre</button>
+                    <button class="semester-tab" type="button" role="tab" aria-selected="false" aria-controls="project-panel" data-semester="3">4º semestre</button>
+                    <button class="semester-tab" type="button" role="tab" aria-selected="false" aria-controls="project-panel" data-semester="4">5º semestre</button>
+                    <button class="semester-tab" type="button" role="tab" aria-selected="false" aria-controls="project-panel" data-semester="5">6º semestre</button>
+                </div>
+
+                <article id="project-panel" class="project-showcase" role="tabpanel" tabindex="0" aria-live="polite">
+                    <div class="project-visual">
+                    <img id="project-image" class="project-image" src="../assets/liceu_de_artes_e_ofcios_cover.jpg" alt="Imagem do projeto do 1º semestre">
+                    </div>
+                    <div class="project-details">
+                    <p id="project-period" class="project-period">1º semestre · Finalizado</p>
+                    <h3 id="project-title">Educahost</h3>
+                    <p id="project-description" class="project-description">Plataforma de ensino online para facilitar o acesso ao conhecimento e promover a educação inclusiva.</p>
+                    <div id="project-skills" class="skills-list" aria-label="Tecnologias utilizadas"></div>
+                    <button id="project-more" class="project-more" type="button">Ver mais <span aria-hidden="true">↗</span></button>
+                    </div>
+                </article>
+
+                <div class="carousel-controls">
+                    <button id="project-previous" class="carousel-arrow" type="button" aria-label="Projeto anterior">←</button>
+                    <span id="project-counter" class="project-counter">01 / 06</span>
+                    <button id="project-next" class="carousel-arrow" type="button" aria-label="Próximo projeto">→</button>
+                </div>
+                </div>
+        </section>
+
     </main>
 
     <footer id="contact">
         <p>Aberta a novas oportunidades em tecnologia e produto.</p>
     </footer>
+
+    <dialog id="project-modal" class="project-modal" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <button id="modal-close" class="modal-close" type="button" aria-label="Fechar detalhes">&times;</button>
+            <p id="modal-period" class="project-period"></p>
+            <h2 id="modal-title"></h2>
+            <div class="modal-gallery">
+                <img id="modal-image" class="modal-image" src="../assets/liceu_de_artes_e_ofcios_cover.jpg" alt="Imagem do projeto">
+                <button id="modal-image-previous" class="image-arrow image-arrow-previous" type="button" aria-label="Imagem anterior">‹</button>
+                <button id="modal-image-next" class="image-arrow image-arrow-next" type="button" aria-label="Próxima imagem">›</button>
+                <span id="modal-image-counter" class="modal-image-counter">01 / 02</span>
+            </div>
+            <div id="modal-body" class="modal-body"></div>
+            <div class="modal-section">
+                <h3>Tecnologias utilizadas</h3>
+                <div id="modal-skills" class="skills-list"></div>
+            </div>
+            <div class="modal-links">
+                <div class="modal-section">
+                    <h3>Link do projeto</h3>
+                    <a id="modal-project-link" href="#" target="_blank" rel="noreferrer noopener">Não informado</a>
+                </div>
+                <div class="modal-section">
+                    <h3>Integrantes</h3>
+                    <div id="modal-members-list" class="modal-members-list">Não informado</div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="./portfolioPT_scripts.js" defer></script>
 </body>
 
 </html>
