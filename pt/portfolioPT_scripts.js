@@ -2,11 +2,11 @@ const projectsData = {
     1: {
         title: 'Educahost',
         period: '1º semestre · Site · Finalizado',
-        description: 'Plataforma Web Gamificada de Educação Voltada a Crianças Refugiadas',
+        description: 'Plataforma web gamificada, com quizzes e jogos de memória, para apoiar a educação e a inclusão de crianças refugiadas no Brasil.',
         images: ['../assets/primeiro_semestre/Educahost_inicial.png', '../assets/primeiro_semestre/Educahost_game.png', '../assets/primeiro_semestre/Educahost_sobre.png', '../assets/primeiro_semestre/Educahost_apresentacao.jpeg'],
         skills: ['HTML', 'CSS', 'Javascript', 'Scrum', 'Figma', 'Diagramas UML'],
         fullDetails: [{
-                text: "'Todo ser humano, vitima de perseguição, tem o direito de procurar e gozar de auxilio em outro país' ",
+                text: "'Todo ser humano, vítima de perseguição, tem o direito de procurar e gozar de auxílio em outro país'",
                 style: ['bold', 'center']
             },
             {
@@ -19,8 +19,8 @@ const projectsData = {
             'Sendo a educação um direito fundamental, o projeto Educahost visa oferecer uma plataforma web gamificada de educação voltada a crianças refugiadas, com o objetivo de promover a inclusão social e o aprendizado de forma lúdica e interativa. A plataforma abrange conhecimentos de cultura, língua e disciplinas básicas, utilizando elementos de gamificação, como quizzes e jogos de memória, para engajar os usuários e tornar o processo de aprendizagem mais atrativo.',
             '',
             '',
-            'Este projeto foi realizado no primeiro semestre do curso de Desenvolvimento de Software Multiplataforma na Fatec Zona Leste, realizado no primeiro semestre de 2024. Para a modelagem e compreensão do sistema, foram utilizados diagramas UML. Adotamos o Scrum como metodologia ágil, com reuniões semanais para acompanhamento do progresso e definição de tarefas. No desenvolvimento, utilizamos o Figma como ferramenta de prototipação e as tecnologias HTML, CSS e JavaScript para a construção da plataforma web.',
-            'Meu Papel no Projeto: Fiquei responsável por parte da documentação e pesquisa de público alvo do sistema, além de parte da programação e prototipação do Fron-End. Além disso, o projeto foi apresentado para a comunidade acadêmica.',
+            'Este projeto foi realizado no primeiro semestre do curso de Desenvolvimento de Software Multiplataforma na Fatec Zona Leste, no primeiro semestre de 2024. Para a modelagem e a compreensão do sistema, foram utilizados diagramas UML. Adotamos o Scrum como metodologia ágil, com reuniões semanais para acompanhamento do progresso e definição de tarefas. No desenvolvimento, utilizamos o Figma como ferramenta de prototipação e as tecnologias HTML, CSS e JavaScript para a construção da plataforma web.',
+            'Meu papel no projeto: fiquei responsável pela documentação, pela pesquisa de público-alvo do sistema e por parte da programação e da prototipação do front-end. Além disso, o projeto foi apresentado para a comunidade acadêmica.',
             '',
         ],
         link: 'https://github.com/emanuelmartinslima/Projeto-Educahost',
@@ -30,15 +30,15 @@ const projectsData = {
     2: {
         title: 'Sagrado Sistema',
         period: '2º semestre · Site · Finalizado',
-        description: 'Automação do Gerenciamento da Empresa Sagrado Neon',
+        description: 'Sistema web que centraliza contratos, relatórios e alocação de equipamentos de uma empresa de letreiros para eventos, substituindo planilhas e documentos descentralizados.',
         images: ['../assets/segundo_semestre/SagradoSistema_login.png', '../assets/segundo_semestre/SagradoSistema_menu.png', '../assets/segundo_semestre/SagradoSistema_Cliente.png', '../assets/segundo_semestre/SagradoSistema_contrato.png', '../assets/segundo_semestre/SagradoSistema_Relatorio.png'],
         skills: ['HandleBars', 'Bootstrap', 'HTML', 'CSS', 'Javascript', 'Node.js', 'MySQL', 'Figma', 'Diagramas UML', 'Scrum'],
         fullDetails: ['O Sagrado Neon é uma empresa especializada na locação e venda de letreiros em neon para eventos.',
-            'Antes deste projeto, a equipe operacional e a gestão utilizavam ferramentas descentralizadas (como Excel e Word) para realizar tarefas essenciais, como geração de relatórios, emissão de contratos e controle de alocação dos equipamentos.',
+            'Antes deste projeto, a equipe operacional e a gestão utilizavam ferramentas descentralizadas (como Excel e Word) para realizar tarefas essenciais, como geração de relatórios, emissão de contratos e controle da alocação dos equipamentos.',
             'O Sagrado Sistema foi desenvolvido como uma solução de automação para centralizar as principais necessidades do cliente, reduzindo falhas operacionais e otimizando o tempo de gestão.',
             '',
-            'O projeto foi realizado no segundo semestre do curso de Desenvolvimento de Software Multiplataforma na Fatec Zona Leste, realizado no segundo semestre de 2024. A interface foi prototipada no Figma e a arquitetura estruturada via diagramas UML. Adotamos o Scrum como metodologia ágil, além de Handlebars, Node.js, CSS, JavaScript e MySQL para o desenvolvimento.',
-            'Meu Papel no Projeto: Fiquei responsável pela Engenharia de Requisitos e Documentação, realizando o levantamento de requisitos funcionais e não funcionais, elaboração de diagramas de casos de uso e diagramas de sequência. Além disso, o projeto foi apresentado na feira ENGETEC para a comunidade acadêmica.',
+            'O projeto foi realizado no segundo semestre do curso de Desenvolvimento de Software Multiplataforma na Fatec Zona Leste, no segundo semestre de 2024. A interface foi prototipada no Figma e a arquitetura estruturada por meio de diagramas UML. Adotamos o Scrum como metodologia ágil, além de Handlebars, Node.js, CSS, JavaScript e MySQL para o desenvolvimento.',
+            'Meu papel no projeto: fiquei responsável pela engenharia de requisitos e documentação, realizando o levantamento de requisitos funcionais e não funcionais, a elaboração de diagramas de casos de uso e diagramas de sequência. Além disso, o projeto foi apresentado na feira ENGETEC para a comunidade acadêmica.',
 
             ''
         ],
@@ -49,30 +49,30 @@ const projectsData = {
     3: {
         title: 'EcoBalance',
         period: '3º semestre · Site · Finalizado',
-        description: 'Sistema de Rastreamento de Pegada de Carbono.',
+        description: 'Site que calcula a pegada de carbono individual (energia, transporte, gás e alimentação) e sugere hábitos mais sustentáveis com gamificação.',
         images: ['../assets/terceiro_semestre/Ecobalance_site_inicio.png', '../assets/terceiro_semestre/Ecobalance_site_login.png', '../assets/terceiro_semestre/Ecobalance_site_alimento.png', '../assets/terceiro_semestre/Ecobalance_site_transporte.png', '../assets/terceiro_semestre/Ecobalance_site_resultados.png', '../assets/terceiro_semestre/Ecobalance_site_sugestoes.png',],
         skills: ['MongoDB', 'React.js', 'Node.js', 'HTML', 'CSS', 'Javascript', 'Figma', 'Diagramas UML', 'Scrum'],
         fullDetails: [{
-                text: 'ODS 12: Consumo e Produção responsáveis',
+                text: 'ODS 12: Consumo e produção responsáveis',
                 style: ['bold', 'center']
             },
             {
-                text: 'ODS 13: Ação Contra a Mudança Global do Clima',
+                text: 'ODS 13: Ação contra a mudança global do clima',
                 style: ['bold', 'center']
             },
             {
-                text: 'ODS 15: Vida Terrestre',
+                text: 'ODS 15: Vida terrestre',
                 style: ['bold', 'center']
             },
             '',
             '',
             'Os verões estão cada vez mais quentes, acompanhados pelo aumento de incêndios, secas, ciclones e desastres naturais.',
-            'Segundo a Organização Meteorológica Mundial (OMM), o período de 2015 a 2025 foi registrado como o mais quente da história, resultado direto da alta concentração de dióxido de carbono (CO_2) na atmosfera.Apesar de a Geração Z priorizar a sustentabilidade, ainda é um desafio quantificar e compreender o impacto real das escolhas diárias. Para solucionar essa dor, desenvolvemos o EcoBalance.',
-            'O EcoBalance é um sistema de rastreamento de pegada de carbono projetado para conscientizar os usuários sobre o impacto de seus hábitos. A plataforma permite registrar dados de consumo de energia, transporte, gás (encanado e de cozinha), viagens e alimentação para calcular a emissão individual de CO_2. Com base nesse diagnóstico, o sistema fornece historiais e sugestões personalizadas para a adoção de hábitos mais sustentáveis, utilizando um sistema de conquistas e gamificação para incentivar a retenção e o engajamento contínuo dos usuários.',
+            'Segundo a Organização Meteorológica Mundial (OMM), o período de 2015 a 2025 foi registrado como o mais quente da história, resultado direto da alta concentração de dióxido de carbono (CO2) na atmosfera. Apesar de a Geração Z priorizar a sustentabilidade, ainda é um desafio quantificar e compreender o impacto real das escolhas diárias. Para solucionar essa dor, desenvolvemos o EcoBalance.',
+            'O EcoBalance é um sistema de rastreamento de pegada de carbono projetado para conscientizar os usuários sobre o impacto de seus hábitos. A plataforma permite registrar dados de consumo de energia, transporte, gás (encanado e de cozinha), viagens e alimentação para calcular a emissão individual de CO_2. Com base nesse diagnóstico, o sistema fornece históricos e sugestões personalizadas para a adoção de hábitos mais sustentáveis, utilizando um sistema de conquistas e gamificação para incentivar a retenção e o engajamento contínuo dos usuários.',
             '',
             '',
-            'Esse projeto foi realizado no teceiro semestre do curso de Desenvolvimento de Software Multiplataforma na Fatec Zona Leste, realizado no primeiro semestre de 2025. A interface foi prototipada no Figma e a arquitetura estruturada via diagramas UML. Adotamos o Scrum como metodologia ágil, com reuniões e apresentações com stakeholders (turma e professor) a cada 15 dias. Também foi utilizado o React.js, Node.js, MongoDB, Render e Vercel para o desenvolvimento e deploy.',
-            'Meu Papel no Projeto: Fiquei responsável pela pesquisa e mapeamento dos fatores de emissão de $CO_2$, cobrindo desde as médias globais até os índices individuais de transporte, alimentação e consumo de gás. Participei ativamente da gestão e organização do backlog, das reuniões de alinhamento e das apresentações quinzenais para os stakeholders, além de atuar diretamente na elaboração dos protótipos e da documentação do sistema.',
+            'Esse projeto foi realizado no terceiro semestre do curso de Desenvolvimento de Software Multiplataforma na Fatec Zona Leste, no primeiro semestre de 2025. A interface foi prototipada no Figma e a arquitetura estruturada por meio de diagramas UML. Adotamos o Scrum como metodologia ágil, com reuniões e apresentações com stakeholders (turma e professor) a cada 15 dias. Também foram utilizados React.js, Node.js, MongoDB, Render e Vercel para o desenvolvimento e o deploy.',
+            'Meu papel no projeto: fiquei responsável pela pesquisa e mapeamento dos fatores de emissão de CO2, cobrindo desde as médias globais até os índices individuais de transporte, alimentação e consumo de gás. Participei ativamente da gestão e organização do backlog, das reuniões de alinhamento e das apresentações quinzenais para os stakeholders, além de atuar diretamente na elaboração dos protótipos e da documentação do sistema.',
    
             ''
         ],
@@ -83,7 +83,7 @@ const projectsData = {
     4: {
         title: 'Questões e Masmorras',
         period: '4º semestre · Site · Finalizado',
-        description: 'Plataforma gamificada de educação inspirada em RPGs.',
+        description: 'Plataforma inspirada em RPG de mesa que torna aulas do ensino superior mais engajantes, criada a partir de pesquisa com 47 estudantes e professores.',
         images: ['../assets/quarto_semestre/Q&M_menu.png', '../assets/quarto_semestre/Q&M_login.png', '../assets/quarto_semestre/Q&M_sala.png', '../assets/quarto_semestre/Q&M_sala3.png', '../assets/quarto_semestre/Q&M_multipla.png', '../assets/quarto_semestre/Q&M_monstro.png', '../assets/quarto_semestre/Q&M_Engetec.jpg',],
         skills: ['Acessibilidade', 'Figma', 'Product Discovery', 'Personas', 'React.js', 'MongoDB', 'Scrum', 'Node.js', 'Vercel'],
         fullDetails: [{
@@ -91,19 +91,19 @@ const projectsData = {
             style: ['bold', 'center']
         },
         '',
-        'Durante a infância, o lúdico é mostrado como elemento essencial para o aprendizado. Entretanto, a cada ano estudantil a educação se torna mais engessada e no ensino superior, com jornadas duplas e às vezes triplas, a gamificação é quase nula e a retenção diminui.',
+        'Durante a infância, o lúdico é mostrado como elemento essencial para o aprendizado. Entretanto, a cada ano estudantil, a educação se torna mais engessada e, no ensino superior, com jornadas duplas e às vezes triplas, a gamificação é quase nula e a retenção diminui.',
         '',
         '',
-        'Larissa tem 19 anos, cursa Comércio Exterior e é bem familiarizada com tecnologia (passa mais de 6 horas por dia em telas). Trabalha e estuda e, apesar da sua personalidade comunicativa, possui dificuldade em interagir com colegas de turma que estão igualmente cansados da rotina monótona e que se veem como rivais por conta da pressão profissional. É adepta de jogos de interpretação (RPG) e está aberta a novas ferramentas na educação.',
-        'Felipe é um professor de tecnologia de 42 anos e também possui alta familiaridade com tecnologia por causa da sua profissão (mais de 6 horas por dia). Costuma usar ferramentas tradicionais como slides em suas aulas e busca métodos para torná-las mais dinâmicas e interativas, porém seus alunos parecem constantemente desanimados, competitivos e com diferentes níveis de dedicação, principalmente nas turmas iniciais. Também se mostra aberto à utilização de novas tecnologias para aumentar o engajamento.',
+        'Larissa tem 19 anos, cursa Comércio Exterior e é bem familiarizada com tecnologia (passa mais de 6 horas por dia em telas). Trabalha e estuda e, apesar da sua personalidade comunicativa, possui dificuldade em interagir com colegas de turma que estão igualmente cansados da rotina monótona e se veem como rivais por conta da pressão profissional. É adepta de jogos de interpretação (RPG) e está aberta a novas ferramentas na educação.',
+        'Felipe é um professor de tecnologia de 42 anos e também possui alta familiaridade com tecnologia por causa da profissão (mais de 6 horas por dia). Costuma usar ferramentas tradicionais como slides em suas aulas e busca métodos para torná-las mais dinâmicas e interativas; porém, seus alunos parecem constantemente desanimados, competitivos e com diferentes níveis de dedicação, principalmente nas turmas iniciais. Também se mostra aberto à utilização de novas tecnologias para aumentar o engajamento.',
         '',
-        '',        
+        '',
         'Após realizar uma pesquisa com 47 estudantes e professores da instituição, identificamos as duas personas da aplicação: Larissa e Felipe. Ambos ressaltaram a dificuldade de engajamento e socialização no ensino superior e, pensando nisso, surgiu o Questões e Masmorras.',
         'O Questões e Masmorras é uma aplicação inspirada em elementos de RPG de mesa voltada ao contexto educacional. Seu principal objetivo é proporcionar aos alunos e professores uma ferramenta para tornar as aulas mais dinâmicas e envolventes. A plataforma permite que o professor cadastre desafios (questões de múltipla escolha, desafios em grupo e individuais) e crie uma narrativa dinâmica para ser vivida pela turma. Em sala de aula, os alunos acessam a aventura e participam ativamente da experiência pedagógica.',
         '',
         '',
-            'Este projeto foi desenvolvido no quarto semestre (2º semestre de 2025) do curso de Desenvolvimento de Software Multiplataforma na Fatec Zona Leste. A interface foi prototipada no Figma após um processo de Product Discovery que incluiu pesquisa com o público-alvo, construção de personas e reuniões de validação com stakeholders. Adotamos o Scrum como metodologia ágil e utilizamos React.js, Node.js, MongoDB e Vercel para o desenvolvimento e deploy. Além disso, garantimos a acessibilidade da aplicação aplicando diretrizes técnicas validadas via extensão WAVE, biblioteca axe-core e integração com o VLibras.',
-            'Meu papel no Projeto: Fiquei responsável pela etapa de Product Discovery, conduzindo a criação das personas e a apresentação de validação com os stakeholders. Também liderei a elaboração da documentação funcional e a adequação do projeto às normas de acessibilidade web.',
+            'Este projeto foi desenvolvido no quarto semestre (2º semestre de 2025) do curso de Desenvolvimento de Software Multiplataforma na Fatec Zona Leste. A interface foi prototipada no Figma após um processo de Product Discovery que incluiu pesquisa com o público-alvo, construção de personas e reuniões de validação com stakeholders. Adotamos o Scrum como metodologia ágil e utilizamos React.js, Node.js, MongoDB e Vercel para o desenvolvimento e o deploy. Além disso, garantimos a acessibilidade da aplicação aplicando diretrizes técnicas validadas via extensão WAVE, biblioteca axe-core e integração com o VLibras.',
+            'Meu papel no projeto: fiquei responsável pela etapa de Product Discovery, conduzindo a criação das personas e a apresentação de validação com os stakeholders. Também liderei a elaboração da documentação funcional e a adequação do projeto às normas de acessibilidade web.',
      
             ''
     ],
@@ -114,9 +114,9 @@ const projectsData = {
     5: {
         title: 'EcoBalance Mobile',
         period: '5º semestre · Mobile · Finalizado',
-        description: 'Versão Mobile do sistema de rastreamento de pegada de carbono.',
+        description: 'Versão Mobile do EcoBalance, sistema de rastreamento de pegada de carbono.',
         images: ['../assets/quinto_semestre/EcoBalance_Mobile_Menu.png', '../assets/quinto_semestre/EcoBalance_Mobile_Dieta.png', '../assets/quinto_semestre/EcoBalance_Mobile_Gas.png', '../assets/quinto_semestre/EcoBalance_Mobile_Conquista.png', '../assets/quinto_semestre/EcoBalance_Mobile_Resultado.png', '../assets/quinto_semestre/EcoBalance_Mobile_Graficos.png', '../assets/quinto_semestre/EcoBalance_Mobile_ConquistaGraficos.jpg',],
-        skills: ['React Native', 'Figma', 'Andoid Studio', 'MongoDB', 'Swagger UI', 'Sonar'],
+        skills: ['React Native', 'Figma', 'Android Studio', 'MongoDB', 'Swagger UI', 'SonarQube'],
         fullDetails: [{
             text: 'O sistema de rastreamento de pegada de carbono agora na palma da sua mão.',
             style: ['bold', 'center']
@@ -128,7 +128,7 @@ const projectsData = {
             '',
             '',
             'O aplicativo foi prototipado no Figma e desenvolvido utilizando Scrum como metodologia ágil. No desenvolvimento, utilizamos React Native, Android Studio, Node.js e MongoDB. Neste semestre, aplicamos um foco especial em segurança e qualidade de código, integrando ferramentas como bcrypt, dotenv, Swagger UI e SonarQube.',
-            'Meu papel no projeto: Fiquei responsável pela prototipação de UI/UX e desenvolvimento front-end da aplicação móvel. Além disso, participei ativamente das reuniões de validação com stakeholders e contribuí para a construção das documentações técnicas e funcionais do sistema.',
+            'Meu papel no projeto: fiquei responsável pela prototipação de UI/UX e pelo desenvolvimento front-end da aplicação móvel. Além disso, participei ativamente das reuniões de validação com stakeholders e contribuí para a construção das documentações técnicas e funcionais do sistema.',
        
             ''
         ],
@@ -140,7 +140,7 @@ const projectsData = {
     6: {
         title: 'BlueWatch',
         period: '6º semestre · Multiplataforma · Em desenvolvimento',
-        description: 'Plataforma de monitoramento de aquarios.',
+        description: 'Plataforma multiplataforma de monitoramento de aquários com IoT.',
         images: ['../assets/sexto_semestre/BlueWatch.png'],
         skills: ['Kotlin', 'IoT', 'Java', 'Figma'],
         fullDetails: ['~ EM PROCESSO ~',
