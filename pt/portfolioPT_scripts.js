@@ -24,7 +24,13 @@ const projectsData = {
             '',
         ],
         link: 'https://github.com/emanuelmartinslima/Projeto-Educahost',
-        integrantes: ['Emanuel Lima', 'Felipe da Silva Moreno', 'Milene Santos', 'Ricardo Campos', 'Viviane Silva']
+        integrantes: [
+            { name: 'Emanuel Lima', linkedin: 'https://www.linkedin.com/in/emanuel-lima-dev/' },
+            { name: 'Felipe da Silva Moreno', linkedin: 'https://www.linkedin.com/in/felipe-moreno99/' },
+            { name: 'Milene Santos', linkedin: 'https://www.linkedin.com/in/milene-santos/' },
+            { name: 'Ricardo Campos', linkedin: 'https://www.linkedin.com/in/ricardo-palma-garcia-de-campos-07b0642b2/' },
+            { name: 'Viviane Silva', linkedin: 'https://www.linkedin.com/in/viviane-rezende-silva-36419913a/' }
+        ]
     },
 
     2: {
@@ -43,7 +49,13 @@ const projectsData = {
             ''
         ],
         link: 'https://github.com/emanuelmartinslima/ProjetoPI2-Sagrado-Sistema',
-        integrantes: ['Emanuel Lima', 'Felipe da Silva Moreno', 'Milene Santos', 'Ricardo Campos', 'Viviane Silva']
+        integrantes: [
+            { name: 'Emanuel Lima', linkedin: 'https://www.linkedin.com/in/emanuel-lima-dev/' },
+            { name: 'Felipe da Silva Moreno', linkedin: 'https://www.linkedin.com/in/felipe-moreno99/' },
+            { name: 'Milene Santos', linkedin: 'https://www.linkedin.com/in/milene-santos/' },
+            { name: 'Ricardo Campos', linkedin: 'https://www.linkedin.com/in/ricardo-palma-garcia-de-campos-07b0642b2/' },
+            { name: 'Viviane Silva', linkedin: 'https://www.linkedin.com/in/viviane-rezende-silva-36419913a/' }
+        ]
 
     },
     3: {
@@ -77,7 +89,13 @@ const projectsData = {
             ''
         ],
         link: 'https://github.com/littlerichard01/EcoBalance',
-        integrantes: ['Emanuel Lima', 'Felipe da Silva Moreno', 'Milene Santos', 'Ricardo Campos', 'Viviane Silva']
+        integrantes: [
+            { name: 'Emanuel Lima', linkedin: 'https://www.linkedin.com/in/emanuel-lima-dev/' },
+            { name: 'Felipe da Silva Moreno', linkedin: 'https://www.linkedin.com/in/felipe-moreno99/' },
+            { name: 'Milene Santos', linkedin: 'https://www.linkedin.com/in/milene-santos/' },
+            { name: 'Ricardo Campos', linkedin: 'https://www.linkedin.com/in/ricardo-palma-garcia-de-campos-07b0642b2/' },
+            { name: 'Viviane Silva', linkedin: 'https://www.linkedin.com/in/viviane-rezende-silva-36419913a/' }
+        ]
     },
 
     4: {
@@ -108,7 +126,13 @@ const projectsData = {
             ''
     ],
         link: 'https://github.com/Lucas-Gatto/Questoes-e-Masmorras',
-        integrantes: [ 'Felipe da Silva Moreno', 'Lucas Gatto', 'Milene Santos', 'Ricardo Campos', 'Viviane Silva']
+        integrantes: [
+            { name: 'Felipe da Silva Moreno', linkedin: 'https://www.linkedin.com/in/felipe-moreno99/' },
+            { name: 'Lucas Gatto', linkedin: 'https://www.linkedin.com/in/lucas-gatto-3870372b7/' },
+            { name: 'Milene Santos', linkedin: 'https://www.linkedin.com/in/milene-santos/' },
+            { name: 'Ricardo Campos', linkedin: 'https://www.linkedin.com/in/ricardo-palma-garcia-de-campos-07b0642b2/' },
+            { name: 'Viviane Silva', linkedin: 'https://www.linkedin.com/in/viviane-rezende-silva-36419913a/' }
+        ]
     },
 
     5: {
@@ -133,7 +157,13 @@ const projectsData = {
             ''
         ],
         link: 'https://github.com/littlerichard01/EcoBalance-mobile',
-        integrantes: ['Felipe da Silva Moreno', 'Lucas Gatto', 'Milene Santos', 'Ricardo Campos', 'Viviane Silva']
+        integrantes: [
+            { name: 'Felipe da Silva Moreno', linkedin: 'https://www.linkedin.com/in/felipe-moreno99/' },
+            { name: 'Lucas Gatto', linkedin: 'https://www.linkedin.com/in/lucas-gatto-3870372b7/' },
+            { name: 'Milene Santos', linkedin: 'https://www.linkedin.com/in/milene-santos/' },
+            { name: 'Ricardo Campos', linkedin: 'https://www.linkedin.com/in/ricardo-palma-garcia-de-campos-07b0642b2/' },
+            { name: 'Viviane Silva', linkedin: 'https://www.linkedin.com/in/viviane-rezende-silva-36419913a/' }
+        ]
 
     },
 
@@ -146,6 +176,13 @@ const projectsData = {
         fullDetails: ['~ EM PROCESSO ~',
             '',
             '',
+        ],
+        integrantes: [
+            { name: 'Felipe da Silva Moreno', linkedin: 'https://www.linkedin.com/in/felipe-moreno99/' },
+            { name: 'Lucas Gatto', linkedin: 'https://www.linkedin.com/in/lucas-gatto-3870372b7/' },
+            { name: 'Milene Santos', linkedin: 'https://www.linkedin.com/in/milene-santos/' },
+            { name: 'Ricardo Campos', linkedin: 'https://www.linkedin.com/in/ricardo-palma-garcia-de-campos-07b0642b2/' },
+            { name: 'Viviane Silva', linkedin: 'https://www.linkedin.com/in/viviane-rezende-silva-36419913a/' }
         ]
     }
 };
@@ -211,12 +248,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const renderMembers = members => {
         const memberList = Array.isArray(members) ? members : [members];
-        const validMembers = memberList.filter(member => member && member.trim());
+        const validMembers = memberList.filter(member => {
+            if (!member) {
+                return false;
+            }
 
-        modalMembersList.replaceChildren(...(validMembers.length ? validMembers : ['Não informado']).map(member => {
-            const line = document.createElement('span');
+            if (typeof member === 'string') {
+                return member.trim();
+            }
+
+            return member.name && member.name.trim();
+        });
+
+        modalMembersList.replaceChildren(...(validMembers.length ? validMembers : [{ name: 'Não informado' }]).map(member => {
+            const memberName = typeof member === 'string' ? member : member.name;
+            const memberLink = typeof member === 'string' ? null : member.linkedin;
+            const line = memberLink ? document.createElement('a') : document.createElement('span');
             line.className = 'modal-member';
-            line.textContent = member;
+            line.textContent = memberName;
+
+            if (memberLink) {
+                line.href = memberLink;
+                line.target = '_blank';
+                line.rel = 'noreferrer noopener';
+            }
+
             return line;
         }));
     };
