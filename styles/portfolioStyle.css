@@ -356,6 +356,7 @@ footer {
 }
 
 #skills,
+#courses,
 #contact {
     padding: 70px 0 50px;
     border-top: 1px solid var(--linha);
@@ -391,6 +392,36 @@ footer {
 
 .skill-panel .skills-container {
     margin-top: 0;
+}
+
+.course-list {
+    display: grid;
+    gap: 12px;
+    list-style: none;
+}
+
+.course-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 20px clamp(22px, 3vw, 30px);
+    border: 1px solid var(--linha);
+    border-radius: 8px;
+    background: linear-gradient(145deg, rgba(13, 38, 52, 0.82), rgba(7, 19, 28, 0.54));
+}
+
+.course-item h3 {
+    color: var(--branco);
+    font-size: clamp(1rem, 1.7vw, 1.25rem);
+    line-height: 1.4;
+}
+
+.course-item p {
+    flex: 0 0 auto;
+    color: var(--azul-claro);
+    font-family: "Courier New", monospace;
+    font-size: 0.9rem;
 }
 
 .contact-grid {
@@ -448,6 +479,14 @@ footer {
     .skills-section,
     .contact-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .course-item {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
     }
 }
 
