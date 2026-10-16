@@ -3,7 +3,7 @@ const projectsData = {
         title: 'Educahost',
         period: '1º semestre · Site · Finalizado',
         description: 'Plataforma web gamificada, com quizzes e jogos de memória, para apoiar a educação e a inclusão de crianças refugiadas no Brasil.',
-        images: ['../assets/primeiro_semestre/Educahost_inicial.png', '../assets/primeiro_semestre/Educahost_game.png', '../assets/primeiro_semestre/Educahost_sobre.png', '../assets/primeiro_semestre/Educahost_apresentacao.jpeg'],
+        images: ['../assets/primeiro_semestre/Educahost_inicial.png', '../assets/primeiro_semestre/Educahost_game.png', '../assets/primeiro_semestre/Educahost_sobre.png'],
         skills: ['HTML', 'CSS', 'Javascript', 'Scrum', 'Figma', 'Diagramas UML'],
         fullDetails: [{
                 text: "'Todo ser humano, vítima de perseguição, tem o direito de procurar e gozar de auxílio em outro país'",
@@ -102,7 +102,7 @@ const projectsData = {
         title: 'Questões e Masmorras',
         period: '4º semestre · Site · Finalizado',
         description: 'Plataforma inspirada em RPG de mesa que torna aulas do ensino superior mais engajantes, criada a partir de pesquisa com 47 estudantes e professores.',
-        images: ['../assets/quarto_semestre/Q&M_menu.png', '../assets/quarto_semestre/Q&M_login.png', '../assets/quarto_semestre/Q&M_sala.png', '../assets/quarto_semestre/Q&M_sala3.png', '../assets/quarto_semestre/Q&M_multipla.png', '../assets/quarto_semestre/Q&M_monstro.png', '../assets/quarto_semestre/Q&M_Engetec.jpg',],
+        images: ['../assets/quarto_semestre/Q&M_menu.png', '../assets/quarto_semestre/Q&M_login.png', '../assets/quarto_semestre/Q&M_sala.png', '../assets/quarto_semestre/Q&M_sala3.png', '../assets/quarto_semestre/Q&M_multipla.png', '../assets/quarto_semestre/Q&M_monstro.png'],
         skills: ['Acessibilidade', 'Figma', 'Product Discovery', 'Personas', 'React.js', 'MongoDB', 'Scrum', 'Node.js', 'Vercel'],
         fullDetails: [{
             text: 'Em um cotidiano tão frenético, a educação não precisa ser mais um peso.',

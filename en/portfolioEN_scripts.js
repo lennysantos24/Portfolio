@@ -3,7 +3,7 @@ const projectsData = {
         title: 'Educahost',
         period: '1st semester · Website · Completed',
         description: 'Gamified educational platform for refugee children',
-        images: ['../assets/primeiro_semestre/Educahost_inicial.png', '../assets/primeiro_semestre/Educahost_game.png', '../assets/primeiro_semestre/Educahost_sobre.png', '../assets/primeiro_semestre/Educahost_apresentacao.jpeg'],
+        images: ['../assets/primeiro_semestre/Educahost_inicial.png', '../assets/primeiro_semestre/Educahost_game.png', '../assets/primeiro_semestre/Educahost_sobre.png'],
         skills: ['HTML', 'CSS', 'Javascript', 'Scrum', 'Figma', 'UML Diagrams'],
         fullDetails: [{
                 text: 'Every human being, a victim of persecution, has the right to seek and enjoy asylum in another country.',
@@ -99,7 +99,7 @@ const projectsData = {
         title: 'Questions and Dungeons',
         period: '4th semester · Website · Completed',
         description: 'Gamified educational platform inspired by RPGs.',
-        images: ['../assets/quarto_semestre/Q&M_menu.png', '../assets/quarto_semestre/Q&M_login.png', '../assets/quarto_semestre/Q&M_sala.png', '../assets/quarto_semestre/Q&M_sala3.png', '../assets/quarto_semestre/Q&M_multipla.png', '../assets/quarto_semestre/Q&M_monstro.png', '../assets/quarto_semestre/Q&M_Engetec.jpg'],
+        images: ['../assets/quarto_semestre/Q&M_menu.png', '../assets/quarto_semestre/Q&M_login.png', '../assets/quarto_semestre/Q&M_sala.png', '../assets/quarto_semestre/Q&M_sala3.png', '../assets/quarto_semestre/Q&M_multipla.png', '../assets/quarto_semestre/Q&M_monstro.png'],
         skills: ['Accessibility', 'Figma', 'Product Discovery', 'Personas', 'React.js', 'MongoDB', 'Scrum', 'Node.js', 'Vercel'],
         fullDetails: [{
             text: 'In such a fast-paced daily life, education does not need to be a burden.',
