@@ -135,8 +135,8 @@ const projectsData = {
         title: 'EcoBalance Mobile',
         period: '5th semester · Mobile · Completed',
         description: 'Mobile version of the carbon footprint tracking system.',
-        images: ['../assets/quinto_semestre/EcoBalance_Mobile_Menu.png', '../assets/fatec-zona-leste.png'],
-        skills: ['React Native', 'Figma', 'Android Studio', 'MongoDB', 'Swagger UI', 'Sonar'],
+        images: ['../assets/quinto_semestre/EcoBalance_Mobile_Menu.png', '../assets/quinto_semestre/EcoBalance_Mobile_Dieta.png', '../assets/quinto_semestre/EcoBalance_Mobile_Gas.png', '../assets/quinto_semestre/EcoBalance_Mobile_Conquista.png', '../assets/quinto_semestre/EcoBalance_Mobile_Resultado.png', '../assets/quinto_semestre/EcoBalance_Mobile_Graficos.png', '../assets/quinto_semestre/EcoBalance_Mobile_ConquistaGraficos.jpg'],
+        skills: ['React Native', 'Figma', 'Android Studio', 'MongoDB', 'Swagger UI', 'SonarQube'],
         fullDetails: [{
             text: 'The carbon footprint tracking system now in the palm of your hand.',
             style: ['bold', 'center']
@@ -162,12 +162,12 @@ const projectsData = {
     },
 
     6: {
-        title: 'Final Integrative Project',
+        title: 'BlueWatch',
         period: '6th semester · Multiplatform · In development',
-        description: 'Intelligent home automation platform based on microservices.',
-        images: ['../assets/fatec-zona-leste.png', '../assets/liceu_de_artes_e_ofcios_cover.jpg'],
-        skills: ['Docker', 'IoT', 'React Native', 'Python'],
-        fullDetails: 'Integrative project that combines hardware, mobile app, and cloud server into a smart home automation solution.'
+        description: 'Cross-platform aquarium monitoring platform with IoT.',
+        images: ['../assets/sexto_semestre/BlueWatch.png'],
+        skills: ['Kotlin', 'IoT', 'Java', 'Figma'],
+        fullDetails: ['~ IN PROGRESS ~']
     }
 };
 
@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         image.classList.toggle('project-image--compact', shouldCompactImage);
         projectVisual?.classList.toggle('project-visual--compact', shouldCompactImage);
-        carousel?.classList.toggle('project-showcase--wide', isWideSemester);
+        carousel.querySelector('.project-showcase')?.classList.toggle('project-showcase--wide', isWideSemester);
 
         const modalGallery = document.querySelector('.modal-gallery');
         const modalImageElement = document.querySelector('#modal-image');

@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         image.classList.toggle('project-image--compact', shouldCompactImage);
         projectVisual?.classList.toggle('project-visual--compact', shouldCompactImage);
-        carousel?.classList.toggle('project-showcase--wide', isWideSemester);
+        carousel.querySelector('.project-showcase')?.classList.toggle('project-showcase--wide', isWideSemester);
 
         const modalGallery = document.querySelector('.modal-gallery');
         const modalImageElement = document.querySelector('#modal-image');
